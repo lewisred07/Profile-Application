@@ -1,4 +1,4 @@
 Personal Profile Web App | HTML, CSS, JavaScript
-  - Built a form-based web app that collects user input, validates it, and displays saved profiles dynamically
+  - Built a form-based website that collects user input, validates it, and displays saved profiles dynamically
   - Implemented input validation and safe DOM output to prevent malformed data and script injection
   - Designed with accessibility in mind (labeled fields, live status messages, image alt text)
