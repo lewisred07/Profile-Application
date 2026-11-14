@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Profile Application</title>
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <main>
+        <h1>Welcome to your Personal Profile! Input your information below:</h1>
+
+        <!-- Form is handled by app.js -->
+        <form id="profile-form" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="bio">Short Bio (optional):</label>
+            <textarea id="bio" name="bio" rows="4"></textarea>
+
+            <input type="submit" value="Submit Profile">
+        </form>
+
+        <!-- app.js writes success / error messages here -->
+        <div id="messages" class="messages" role="status" aria-live="polite"></div>
+
+        <section>
+            <h2>Saved profiles <span id="profile-count" class="count">0 profiles</span></h2>
+            <!-- app.js builds the profile cards here from the profiles array -->
+            <div id="profile-list"></div>
+        </section>
+
+        <h2>Thanks for visiting!</h2>
+
+        <!-- lil guy I put at the end -->
+        <img src="66b3e5d0c2ab246786ca1d5e_86.png" alt="blue smiley giving two thumbs up" width="140">
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
